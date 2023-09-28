@@ -20,7 +20,7 @@
   "type": "voc",
   "eap": "Grondverzet.EAP",
   "diagram": "Grondverzet-Grondboringen",
-  "template": "mijn-applicatieprofiel-ap.j2",
+  "template": "mijn-vocabularium-voc.j2",
   "title": "Vocabularium Grondverzet - Grondboringen",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "publication-date": "2023-10-01",

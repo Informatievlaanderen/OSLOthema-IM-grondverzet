@@ -2,7 +2,7 @@
 {
   "name": "grondverzet-grondboringen-im",
   "type": "ap",
-  "eap": "Grondverzet.eap",
+  "eap": "Grondverzet.EAP",
   "diagram": "Grondverzet-Grondboringen",
   "template": "mijn-applicatieprofiel-ap.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",

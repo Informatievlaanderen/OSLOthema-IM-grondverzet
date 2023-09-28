@@ -1,7 +1,7 @@
 [
 {
   "name": "grondverzet-grondboringen-im",
-  "type": "im",
+  "type": "ap",
   "eap": "Grondverzet.eap",
   "diagram": "Grondverzet-Grondboringen",
   "template": "mijn-applicatieprofiel-ap.j2",

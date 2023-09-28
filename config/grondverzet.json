@@ -3,7 +3,7 @@
   "name": "grondverzet-grondboringen-im",
   "type": "im",
   "eap": "Grondverzet.eap",
-  "diagram": "Grondverzet-Grondboringenl",
+  "diagram": "Grondverzet-Grondboringen",
   "template": "mijn-applicatieprofiel-ap.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",

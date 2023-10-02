@@ -4,7 +4,7 @@
   "type": "ap",
   "eap": "Grondverzet.EAP",
   "diagram": "Grondverzet-Grondboringen",
-  "template": "grondverzet-grondboringen-ap.j2",
+  "template": "grondverzet-grondboringen-im.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "publication-date": "2023-10-01",

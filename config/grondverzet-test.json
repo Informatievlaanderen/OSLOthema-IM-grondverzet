@@ -19,7 +19,7 @@
   "name": "grondverzet-grondboringen-imvoc",
   "type": "voc",
   "eap": "Grondverzet.EAP",
-  "diagram": "Grondverzet-Grondboringen",
+  "diagram": "IM-Grondboringen",
   "template": "mijn-vocabularium-voc.j2",
   "title": "Vocabularium Implementatiemodel Grondverzet - Grondboringen",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",

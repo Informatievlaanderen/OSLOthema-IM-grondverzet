@@ -2,7 +2,7 @@
 {
   "name": "grondverzet-grondboringen-im",
   "type": "ap",
-  "eap": "Grondverzet-test.EAP",
+  "eap": "Grondverzet.EAP",
   "diagram": "IM-Grondboringen",
   "template": "grondverzet-grondboringen-im.j2",
   "title": "Implementatiemodel Grondverzet - Grondboringen",
@@ -18,7 +18,7 @@
 {
   "name": "grondverzet-grondboringen-imvoc",
   "type": "voc",
-  "eap": "Grondverzet-test.EAP",
+  "eap": "Grondverzet.EAP",
   "diagram": "IM-Grondboringen",
   "template": "mijn-vocabularium-voc.j2",
   "title": "Vocabularium Implementatiemodel Grondverzet - Grondboringen",

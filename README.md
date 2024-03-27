@@ -1,3 +1,4 @@
 # OSLOthema-im-grondverzet
 
-Dit is de repository om de implementatiemodellen van grondverzet te beschrijven.
+Momenteel zijn volgende specificaties in ontwikkeling beschikbaar:
+- [IM-Grondboringen](https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01/)

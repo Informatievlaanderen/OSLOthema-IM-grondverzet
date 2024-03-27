@@ -1,7 +1,7 @@
 # OSLOthema-im-grondverzet
 
 Specificaties:
-- [IM-Grondboringen](https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/)
+- [IM-Grondboringen](https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/grondboringen/)
 - [IM-Agents](https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/agents/)
 
 Andere nuttige links:

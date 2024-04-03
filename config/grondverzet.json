@@ -76,5 +76,21 @@
   "site": "site-skeleton/grondverzet-locaties",
   "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
-}
+},
+{
+  "name": "grondverzet-opdrachten-im",
+  "type": "ap",
+  "eap": "Grondverzet.EAP",
+  "diagram": "IM-Opdrachten",
+  "template": "grondverzet-grondboringen-im.j2",
+  "title": "Implementatiemodel Grondverzet - Opdrachten",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "publication-date": "2024-03-11",
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "contributors-file": "stakeholders.csv",
+  "contributors-column": "MijnKolom",
+  "site": "site-skeleton/grondverzet-opdrachten",
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
+}  
 ]

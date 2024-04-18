@@ -51,7 +51,7 @@
   "type": "voc",
   "eap": "Grondverzet.EAP",
   "diagram": "IM-Agents",
-  "template": "mijn-vocabularium-voc.j2",
+  "template": "grondverzet-grondboringen-voc.j2",
   "title": "Vocabularium Implementatiemodel Grondverzet - Agents",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "publication-date": "2024-03-11",
@@ -78,6 +78,21 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
 },
 {
+  "name": "grondverzet-locaties-imvoc",
+  "type": "voc",
+  "eap": "Grondverzet.EAP",
+  "diagram": "IM-Locaties",
+  "template": "grondverzet-grondboringen-voc.j2",
+  "title": "Vocabularium Implementatiemodel Grondverzet - Locaties",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "publication-date": "2024-03-11",
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "contributors-file": "stakeholders.csv",
+  "contributors-column": "MijnKolom",
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
+}, 
+{
   "name": "grondverzet-opdrachten-im",
   "type": "ap",
   "eap": "Grondverzet.EAP",
@@ -92,5 +107,20 @@
   "site": "site-skeleton/grondverzet-opdrachten",
   "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
-}  
+},
+{
+  "name": "grondverzet-opdrachten-imvoc",
+  "type": "voc",
+  "eap": "Grondverzet.EAP",
+  "diagram": "IM-Locaties",
+  "template": "grondverzet-grondboringen-voc.j2",
+  "title": "Vocabularium Implementatiemodel Grondverzet - Opdrachten",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "publication-date": "2024-03-11",
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "contributors-file": "stakeholders.csv",
+  "contributors-column": "MijnKolom",
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/issues",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
+}
 ]

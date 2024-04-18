@@ -112,7 +112,7 @@
   "name": "grondverzet-opdrachten-imvoc",
   "type": "voc",
   "eap": "Grondverzet.EAP",
-  "diagram": "IM-Locaties",
+  "diagram": "IM-Opdrachten",
   "template": "grondverzet-grondboringen-voc.j2",
   "title": "Vocabularium Implementatiemodel Grondverzet - Opdrachten",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",

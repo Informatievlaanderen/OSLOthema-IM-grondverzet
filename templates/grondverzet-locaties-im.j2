@@ -1,9 +1,9 @@
 {% extends "impl.j2" %}
 
 {% block summary %}
-<p>Dit implementatiemodel is bedoeld voor het beschrijven van Grondboringen, Boorgaten en Grondmonsters.</p>
-<p>Het is een aanpassing van het <a href="https://data.vlaanderen.be/doc/applicatieprofiel/bodem-en-ondergrond/grondboringen/">applicatieprofiel OSLO-Grondboringen</a>.</p>
-<p>Tov het applicatieprofiel werden een aantal termen verder uitgewerkt (bvb TemporeleEntiteit, KwantitatieveWaarde) of werden aanvullende implementatiemodellen gemaakt (bvb voor Agents, Opdrachten).</p>
+<p>Dit implementatiemodel is bedoeld voor het beschrijven van diverse locatie-aanduiding.</p>
+<p>Directe locatie-aanduidingen zoals DirectePositie of Geometrie.</p>
+<p>En indirecte locatie-aanduidingen zoals GeografischeNaam (voor toponiemen), Plaats (voor plaatsen of gebieden), Adresvoorstelling voor adreslabels (met mogelijke referentie naar een Adres) en RuimtelijkObject.</p>
 <p>Het diagram geeft dmv stereotypes ook aan welke de primair te ontsluiten klassen zijn, in welk implementatiemodel deze worden beschreven, of de klasse abstract is en of naar andere klassen by-reference wordt verwezen.
 {% endblock %}
 

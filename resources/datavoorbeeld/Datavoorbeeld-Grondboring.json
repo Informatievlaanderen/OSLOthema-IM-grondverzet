@@ -1,0 +1,79 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/Informatievlaanderen/data.vlaanderen.be-generated/test/doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01/context/grondverzet-grondboringen-im.jsonld",
+        "https://raw.githubusercontent.com/Informatievlaanderen/data.vlaanderen.be-generated/test/doc/implementatiemodel/grondverzet/locaties/ontwerpstandaard/2023-10-01/context/grondverzet-locaties-im.jsonld",
+        {
+            "geosparql": "http://www.opengis.net/ont/geosparql#",
+            "xml-schema": "http://www.w3.org/2001/XMLSchema#",
+            "qudt-unit": "https://qudt.org/vocab/unit/",
+            "dovboringurl": "https://www.dov.vlaanderen.be/data/boring/",
+            "dovopdrachturl": "https://www.dov.vlaanderen.be/data/opdracht/",
+            "cl-idt": "https://example.com/concept/identificatortype/",
+            "cl-brm": "https://data.bodemenondergrond.vlaanderen.be/id/concept/boormethode#",
+            "cl-dlb": "https://data.bodemenondergrond.vlaanderen.be/id/concept/doelboring#",
+            "cl-mmt": "https://data.bodemenondergrond.vlaanderen.be/id/concept/meetmethodetype#",
+            "cl-mvt": "https://example.com/concept/maaiveldtype/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "dovboringurl:2006-002527",
+            "@type": "Grondboring",
+            "Grondboring.identificator": [
+                {
+                    "@type": "Identificator",
+                    "Identificator.identificator": {
+                        "@value": "GEO-06/075-B19",
+                        "@type": "cl-idt:boornummer"
+                    }
+                }
+            ],
+            "Bemonstering.bemonsteringstijdstip": {
+                "@type": "Moment",
+                "Moment.inXsdDateTime": {
+                    "@type": "xml-schema:dateTime",
+                    "@value": "2006-08-30T00:00:00.000"
+                }
+            },
+            "Bemonstering.bemonsterdObject": {
+                "@type": "Grondobject"
+            },
+            "Bemonstering.uitgevoerdMet": {
+                "@type": "Boor",
+                "Bemonsteraar.implementeert": {
+                    "@type": "Boormethode",
+                    "Boormethode.methode": {
+                        "@type": "BoormethodeInterval",
+                        "BoormethodeInterval.methode": {
+                            "@type": "BoormethodeType",
+                            "@id": "cl-brm:Lepelboring"
+                        },
+                        "BoormethodeInterval.geometrie": {
+                            "@type": "Curve",
+                            "Geometrie.gml": {
+                                "@value": "<gml:Point srsName=\"LS123\" srsDimension=\"1\"><gml:coordinates>11</gml:coordinates><gml:Point>",
+                                "@type": "geosparql:gmlliteral"
+                            }
+                        }
+                    }
+                }
+            },
+            "Bemonstering.uitgevoerdDoor": {
+                "@id": "https:example.com/id/agent/agent001",
+                "@type": "Agent"
+            },
+            "Grondboring.resultaat": {
+                "@id": "https://example.com/id/boorgat/bgt001",
+                "@type": "Boorgat"
+            },
+            "Grondboring.doel": {
+                "@type": "Boringdoeltype",
+                "@id": "cl-dlb:Geotechnischonderzoek"
+            },
+            "Bemonstering.opdracht": {
+                "@id": "dovopdrachturl:2007-005512",
+                "@type": "Opdracht"
+            }
+        }
+    ]
+}

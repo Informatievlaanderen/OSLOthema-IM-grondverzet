@@ -1,0 +1,188 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/Informatievlaanderen/data.vlaanderen.be-generated/test/doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01/context/grondverzet-grondboringen-im.jsonld",
+        "https://raw.githubusercontent.com/Informatievlaanderen/data.vlaanderen.be-generated/test/doc/implementatiemodel/grondverzet/locaties/ontwerpstandaard/2023-10-01/context/grondverzet-locaties-im.jsonld",
+        {
+            "geosparql": "http://www.opengis.net/ont/geosparql#",
+            "xml-schema": "http://www.w3.org/2001/XMLSchema#",
+            "qudt-unit": "https://qudt.org/vocab/unit/",
+            "dovboringurl": "https://www.dov.vlaanderen.be/data/boring/",
+            "dovopdrachturl": "https://www.dov.vlaanderen.be/data/opdracht/",
+            "cl-idt": "https://example.com/concept/identificatortype/",
+            "cl-brm": "https://data.bodemenondergrond.vlaanderen.be/id/concept/boormethode#",
+            "cl-dlb": "https://data.bodemenondergrond.vlaanderen.be/id/concept/doelboring#",
+            "cl-mmt": "https://data.bodemenondergrond.vlaanderen.be/id/concept/meetmethodetype#",
+            "cl-mvt": "https://example.com/concept/maaiveldtype/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "dovboringurl:2006-002527",
+            "@type": "Grondboring",
+            "Grondboring.identificator": [
+                {
+                    "@type": "Identificator",
+                    "Identificator.identificator": {
+                        "@value": "GEO-06/075-B19",
+                        "@type": "cl-idt:boornummer"
+                    }
+                }
+            ],
+            "Bemonstering.bemonsteringstijdstip": {
+                "@type": "Moment",
+                "Moment.inXsdDateTime": {
+                    "@type": "xml-schema:dateTime",
+                    "@value": "2006-08-30T00:00:00.000"
+                }
+            },
+            "Bemonstering.bemonsterdObject": {
+                "@type": "Grondobject"
+            },
+            "Bemonstering.uitgevoerdMet": {
+                "@type": "Bemonsteraar",
+                "Bemonsteraar.implementeert": {
+                    "@type": "Boormethode",
+                    "Boormethode.methode": {
+                        "@type": "BoormethodeInterval",
+                        "BoormethodeInterval.methode": {
+                            "@type": "BoormethodeType",
+                            "@id": "cl-brm:Lepelboring"
+                        },
+                        "BoormethodeInterval.geometrie": {
+                            "@type": "Curve",
+                            "Geometrie.gml": {
+                                "@value": "<gml:Point srsName=\"LS123\" srsDimension=\"1\"><gml:coordinates>11</gml:coordinates><gml:Point>",
+                                "@type": "geosparql:gmlliteral"
+                            }
+                        }
+                    }
+                }
+            },
+            "Bemonstering.uitgevoerdDoor": {
+                "@id": "https:example.com/id/agent/agent001",
+                "@type": "Agent"
+            },
+            "Grondboring.resultaat": "_:bgt01",
+            "Grondboring.doel": {
+                "@type": "Bemonsteringsdoel",
+                "@id": "cl-dlb:Geotechnischonderzoek"
+            },
+            "Bemonstering.opdracht": {
+                "@id": "dovopdrachturl:2007-005512",
+                "@type": "Opdracht"
+            }
+        },
+        {
+            "@id": "_:bgt01",
+            "@type": "Boorgat",
+            "Bemonsteringsobject.identificator": [
+                {
+                    "@type": "Identificator",
+                    "Identificator.identificator": {
+                        "@value": "GEO-06/075-B19",
+                        "@type": "cl-idt:boornummer"
+                    }
+                }
+            ],
+            "Bemonsteringsobject.bemonsterdObject": {
+                "@type": "Grondobject"
+            },
+            "Boorgat.isResultaatVan": {
+                "@id": "dovboringurl:2006-002527",
+                "@type": "Grondboring"
+            },
+            "Bemonsteringsobject.isResultaatVan": {
+                "@id": "dovboringurl:2006-002527",
+                "@type": "Grondboring"
+            },
+            "Boorgat.geometrie": {
+                "@type": "Curve",
+                "Geometrie.gml": {
+                    "@value": "<gml:Linestring name=\"LS123\" srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/6190 srsDimension=\"3\"><gml:coordinates>109422.29, 191785.44, 7.61 109422.29, 191785.44, -3.39</gml:coordinates></gml:Linestring>",
+                    "@type": "geosparql:gmlliteral"
+                },
+                "Geometrie.opmeting": {
+                    "@type": "Opmeting",
+                    "Opmeting.methode": {
+                        "@type": "Opmetingmethode",
+                        "@id": "cl-mmt:xytopografischingemeten"
+                    },
+                    "Opmeting.uitgevoerdDoor": {
+                        "@id": "https:example.com/id/agent/agent001",
+                        "@type": "Agent"
+                    }
+                }
+            },
+            "Boorgat.maaiveld": {
+                "@type": "Maaiveld",
+                "Maaiveld.type": {
+                    "@type": "Maaiveldtype",
+                    "@id": "cl-mvt:huidig"
+                },
+                "Maaiveld.hoogte": {
+                    "@type": "DirectePositie",
+                    "DirectePositie.gml": {
+                        "@value": "<gml:pos srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/5710\">7.61</gml:pos>",
+                        "@type": "geosparql:gmlliteral"
+                    },
+                    "DirectePositie.opmeting": {
+                        "@type": "Opmeting",
+                        "Opmeting.methode": {
+                            "@type": "Opmetingmethode",
+                            "@id": "cl-mmt:ztopografischingemeten"
+                        },
+                        "Opmeting.uitgevoerdDoor": {
+                            "@id": "https:example.com/id/agent/agent001",
+                            "@type": "Agent"
+                        }
+                    }
+                }
+            },
+            "Boorgat.ligging": {
+                "@type": "Plaats",
+                "Plaats.plaatsnaam": {
+                    "@value": "Destelbergen",
+                    "@language": "nl"
+                }
+            },
+            "Boorgat.diepte": {
+                "@type": "KwantitatieveWaarde",
+                "KwantitatieveWaarde.waarde": 11,
+                "KwantitatieveWaarde.eenheid": {
+                    "@type": "Eenheid",
+                    "@id": "qudt-unit:M"
+                }
+            }
+        },
+        {
+            "@id": "dovgrondmonsterurl:2017-169209",
+            "@type": "Grondmonster",
+            "Bemonsteringsobject.identificator": [
+                {
+                    "@type": "Identificator",
+                    "Identificator.identificator": {
+                        "@value": "N1",
+                        "@type": "cl-idt:Monsternummer"
+                    }
+                }
+            ],
+            "Bemonsteringsobject.bemonsterdObject": "_:bgt01",
+            "Grondmonster.materiaalklasse": {
+                "@type": "Materiaalklasse",
+                "@id": "cl-mkl:Grond"
+            },
+            "Grondmonster.monstertype": {
+                "@type": "Grondmonstertype",
+                "@id": "cl-mot:Ongeroerd"
+            },
+            "Grondmonster.bemonsteringsplaats": {
+                "@type": "Curve",
+                "Geometrie.gml": {
+                    "@value": "<gml:Linestring srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/5710\" srsDimension=\"1\"><gml:coordinates>4.61 4.27</gml:coordinates></gml:Linestring>",
+                    "@type": "geosparql:gmlliteral"
+                }
+            },
+            "Bemonsteringsobject.isResultaatVan": "dovboringurl:2006-002527"
+        }
+    ]
+}

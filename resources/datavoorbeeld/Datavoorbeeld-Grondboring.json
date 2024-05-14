@@ -1,7 +1,7 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/Informatievlaanderen/data.vlaanderen.be-generated/test/doc/implementatiemodel/grondverzet/grondboringen/ontwerpstandaard/2023-10-01/context/grondverzet-grondboringen-im.jsonld",
-        "https://raw.githubusercontent.com/Informatievlaanderen/data.vlaanderen.be-generated/test/doc/implementatiemodel/grondverzet/locaties/ontwerpstandaard/2023-10-01/context/grondverzet-locaties-im.jsonld",
+        "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01/context/grondverzet-grondboringen-im.jsonld",
+        "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/locaties/ontwerpstandaard/2023-10-01/context/grondverzet-locaties-im.jsonld",
         {
             "geosparql": "http://www.opengis.net/ont/geosparql#",
             "xml-schema": "http://www.w3.org/2001/XMLSchema#",

@@ -1,0 +1,98 @@
+{
+    "@context": [
+        "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/grondboringen/ontwerpstandaard/2023-10-01/context/grondverzet-grondboringen-im.jsonld",
+        "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/locaties/ontwerpstandaard/2023-10-01/context/grondverzet-locaties-im.jsonld",
+        {
+            "geosparql": "http://www.opengis.net/ont/geosparql#",
+            "xml-schema": "http://www.w3.org/2001/XMLSchema#",
+            "qudt-unit": "https://qudt.org/vocab/unit/",
+            "dovboringurl": "https://www.dov.vlaanderen.be/data/boring/",
+            "dovopdrachturl": "https://www.dov.vlaanderen.be/data/opdracht/",
+            "cl-idt": "https://example.com/concept/identificatortype/",
+            "cl-brm": "https://data.bodemenondergrond.vlaanderen.be/id/concept/boormethode#",
+            "cl-dlb": "https://data.bodemenondergrond.vlaanderen.be/id/concept/doelboring#",
+            "cl-mmt": "https://data.bodemenondergrond.vlaanderen.be/id/concept/meetmethodetype#",
+            "cl-mvt": "https://example.com/concept/maaiveldtype/"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "_:bgt01",
+            "@type": "Boorgat",
+            "Bemonsteringsobject.identificator": [
+                {
+                    "@type": "Identificator",
+                    "Identificator.identificator": {
+                        "@value": "GEO-06/075-B19",
+                        "@type": "cl-idt:boornummer"
+                    }
+                }
+            ],
+            "Boorgat.bemonsterdObject": {
+                "@type": "Grondobject"
+            },
+            "Boorgat.isResultaatVan": {
+                "@id": "dovboringurl:2006-002527",
+                "@type": "Grondboring"
+            },
+            "Boorgat.geometrie": {
+                "@type": "Curve",
+                "Geometrie.gml": {
+                    "@value": "<gml:Linestring name=\"LS123\" srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/6190 srsDimension=\"3\"><gml:coordinates>109422.29, 191785.44, 7.61 109422.29, 191785.44, -3.39</gml:coordinates></gml:Linestring>",
+                    "@type": "geosparql:gmlliteral"
+                },
+                "Geometrie.opmeting": {
+                    "@type": "Opmeting",
+                    "Opmeting.methode": {
+                        "@type": "Opmetingmethode",
+                        "@id": "cl-mmt:xytopografischingemeten"
+                    },
+                    "Opmeting.uitgevoerdDoor": {
+                        "@id": "https:example.com/id/agent/agent001",
+                        "@type": "Agent"
+                    }
+                }
+            },
+            "Boorgat.maaiveld": {
+                "@type": "Maaiveld",
+                "Maaiveld.type": {
+                    "@type": "Maaiveldtype",
+                    "@id": "cl-mvt:huidig"
+                },
+                "Maaiveld.hoogte": {
+                    "@type": "DirectePositie",
+                    "DirectePositie.gml": {
+                        "@value": "<gml:pos srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/5710\">7.61</gml:pos>",
+                        "@type": "geosparql:gmlliteral"
+                    },
+                    "DirectePositie.opmeting": {
+                        "@type": "Opmeting",
+                        "Opmeting.methode": {
+                            "@type": "Opmetingmethode",
+                            "@id": "cl-mmt:ztopografischingemeten"
+                        },
+                        "Opmeting.uitgevoerdDoor": {
+                            "@id": "https:example.com/id/agent/agent001",
+                            "@type": "Agent"
+                        }
+                    }
+                }
+            },
+            "Boorgat.ligging": {
+                "@type": "Plaats",
+                "Plaats.plaatsnaam": {
+                    "@value": "Destelbergen",
+                    "@language": "nl"
+                }
+            },
+            "Boorgat.diepte": {
+                "@type": "KwantitatieveWaarde",
+                "KwantitatieveWaarde.waarde": 11,
+                "KwantitatieveWaarde.eenheid": {
+                    "@type": "Eenheid",
+                    "@id": "qudt-unit:M"
+                }
+            }
+        }
+    ]
+}

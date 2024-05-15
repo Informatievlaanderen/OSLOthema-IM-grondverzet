@@ -2,7 +2,7 @@
 	"@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/agents/ontwerpstandaard/2023-10-01/context/grondverzet-agents-im.jsonld",
 	"@graph": [
 		{
-			"@id": "https://wegwijs.vlaanderen.be/#/organisations/OVO0005371",
+			"@id": "https://data.vlaanderen.be/id/organisatie/OVO0005371",
 			"@type": "Organisatie",
 			"Organisatie.voorkeursnaam": {
 				"@value": "Afdeling Geotechniek",

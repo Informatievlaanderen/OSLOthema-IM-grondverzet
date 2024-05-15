@@ -1,0 +1,23 @@
+{
+	"@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/bodem-en-ondergrond/agents/ontwerpstandaard/2023-10-01/context/grondverzet-agents-im.jsonld",
+	"@graph": [
+		{
+			"@id": "https://wegwijs.vlaanderen.be/#/organisations/OVO0005371",
+			"@type": "Organisatie",
+			"Organisatie.voorkeursnaam": {
+				"@value": "Afdeling Geotechniek",
+				"@language": "nl"
+			},
+			"Organisatie.contactinfo": {
+				"@type": "Contactinfo",
+				"Contactinfo.adres": {
+					"@type": "AdresVoorstelling",
+					"AdresVoorstelling.volledigAdres": {
+						"@value": "Technologiepark-Zwijnaarde 68, 9052 Gent, België",
+						"@language": "nl"
+					}
+				}
+			}
+		}
+	]
+}

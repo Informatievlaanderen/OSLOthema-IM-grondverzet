@@ -11,4 +11,4 @@ Andere nuttige links:
 - [Circle-CI](https://app.circleci.com/pipelines/github/Informatievlaanderen/implementatie.data.vlaanderen.be)
 - [Generated GITHUB](https://github.com/Informatievlaanderen/implementatie.data.vlaanderen.be-generated/tree/production/doc/implementatiemodel/grondverzet)
 - [SHACL-files](https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/main/resources/SHACL)
-- [Datavoorbeelden]()
+- [Datavoorbeelden](https://github.com/Informatievlaanderen/OSLOthema-IM-grondverzet/tree/main/resources/datavoorbeeld)

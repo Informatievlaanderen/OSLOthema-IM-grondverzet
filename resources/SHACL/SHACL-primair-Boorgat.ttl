@@ -77,7 +77,7 @@ qudt:Unit a owl:Class ; rdfs:subClassOf skos:Concept .
     shacl:name "bekisting"@nl;
     shacl:path <https://data.vlaanderen.be/ns/grondboringen#Boorgat.bekisting>
   ], [
-    shacl:class <https://data.vlaanderen.be/ns/grondboringen#Grondobject>;
+    shacl:class <http://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature>;
     shacl:description "Het Grondobject dat wordt bemonsterd."@nl;
     shacl:minCount 1;
     shacl:name "bemonsterdObject"@nl;
@@ -100,7 +100,7 @@ qudt:Unit a owl:Class ; rdfs:subClassOf skos:Concept .
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "isResultaatVan"@nl;
-    shacl:path <http://www.w3.org/ns/sosa/isResultOf>
+    shacl:path <https://data.vlaanderen.be/ns/grondboringen#isResultaatVan>
   ];
   shacl:targetClass <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Borehole> .
   
@@ -132,7 +132,7 @@ qudt:Unit a owl:Class ; rdfs:subClassOf skos:Concept .
   ], [
     shacl:class <http://www.w3.org/ns/sosa/Sampling>;
     shacl:description "Verwijzing naar de Bemonstering waarvan dit Bemonsteringsobject het resultaat is."@nl;
-    shacl:minCount 1;
+    shacl:minCount 0;
     shacl:name "isResultaatVan"@nl;
     shacl:path <http://www.w3.org/ns/sosa/isResultOf>
   ], [

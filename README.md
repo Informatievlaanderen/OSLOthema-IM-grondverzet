@@ -4,7 +4,8 @@ Specificaties:
 - [IM-Grondboringen](https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/grondboringen/)
 - [IM-Agents](https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/agents/)
 - [IM-Locaties](https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/locaties/)
-- [IM-Opdrachten](https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/opdrachten/) 
+- [IM-Opdrachten](https://implementatie.data.vlaanderen.be/doc/implementatiemodel/grondverzet/opdrachten/)
+- IM-TechnischVerslag TODO
 
 Andere nuttige links:
 - [Publicatiefile](https://github.com/Informatievlaanderen/implementatie.data.vlaanderen.be/blob/production/config/production/grondverzet.publication.json)
